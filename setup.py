@@ -11,7 +11,7 @@ setuptools.setup(
     description="A tool for accessing AEMO data.",
     long_description="A tool for accessing AEMO data.",
     long_description_content_type="text/markdown",
-    url="https://github.com/UNSW-CEEM/NEMOSIS",
+    url="https://github.com/yan-r-richard/NEMOSIS_extra_tables",
     packages=setuptools.find_packages(),
     install_requires=[
         "requests",
