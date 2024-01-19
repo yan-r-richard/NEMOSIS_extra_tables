@@ -1,6 +1,8 @@
 # RY comment -- to add a new table, make sure to add information to:
 # names, table_types, display_as_AMEO, data_url, filterable_cols???, table_columns, table_primary_keys, effective_date_group_col???, primary_date_columns
 
+# A good guide is how DISPATCHPRICE is done, but use your judgement for tables that are a bit different
+
 names = {
     "FCAS Providers": "NEM Registration and Exemption List.xls",
     "DISPATCHLOAD": "PUBLIC_DVD_DISPATCHLOAD",
@@ -38,6 +40,10 @@ names = {
     "TRADINGINTERCONNECT": "PUBLIC_DVD_TRADINGINTERCONNECT",
     "MARKET_PRICE_THRESHOLDS": "PUBLIC_DVD_MARKET_PRICE_THRESHOLDS",
     "DAILY_REGION_SUMMARY": "PUBLIC_DAILY_REGION_SUMMARY"
+
+    # New tables:
+    ,"MARKETNOTICEDATA": "PUBLIC_DVD_MARKETNOTICEDATA"
+
 }
 
 table_types = {
@@ -76,6 +82,10 @@ table_types = {
     "TRADINGINTERCONNECT": "MMS",
     "MARKET_PRICE_THRESHOLDS": "MMS",
     "DAILY_REGION_SUMMARY": "DAILY_REGION_SUMMARY"
+
+    # New tables:
+    ,"MARKETNOTICEDATA": "MMS"
+
 }
 
 dynamic_tables = [
@@ -112,6 +122,10 @@ display_as_AMEO = [
     "TRADINGPRICE",
     "TRADINGREGIONSUM",
     "TRADINGINTERCONNECT",
+    
+    # New tables:
+    ,"MARKETNOTICEDATA"
+
 ]
 
 display_as_Custom = ["FCAS_4s_SCADA_MAP", "PLANTSTATS"]
@@ -173,7 +187,11 @@ data_url = {
     "TRADINGPRICE": "aemo_data_url",
     "TRADINGREGIONSUM": "aemo_data_url",
     "TRADINGINTERCONNECT": "aemo_data_url",
-    "MARKET_PRICE_THRESHOLDS": "aemo_data_url",
+    "MARKET_PRICE_THRESHOLDS": "aemo_data_url"
+
+    # New tables:
+    ,"MARKETNOTICEDATA": "aemo_data_url"
+
 }
 
 filterable_cols = [
@@ -673,7 +691,20 @@ table_columns = {
         "DISPATCHABLEGENERATION",
         "DISPATCHABLELOAD",
         "NETINTERCHANGE"
-    ],
+    ]
+    
+    # New tables:
+    ,"MARKETNOTICEDATA": [
+        "NOTICEID",
+        "EFFECTIVEDATE",
+        "TYPEID",
+        "NOTICETYPE",
+        "LASTCHANGED",
+        "REASON",
+        "EXTERNALREFERENCE"
+    ]
+
+
 }
 
 table_primary_keys = {
@@ -769,7 +800,14 @@ table_primary_keys = {
         "SETTLEMENTDATE",
         "INTERVENTION",
         "REGIONID",
-    ],
+    ]
+
+    # New tables:
+    ,"MARKETNOTICEDATA": [
+        "NOTICEID",
+        "EFFECTIVEDATE"
+    ]
+
 }
 
 effective_date_group_col = {
@@ -787,7 +825,10 @@ effective_date_group_col = {
     "MNSP_PEROFFER": ["LINKID"],
     "MNSP_DAYOFFER": ["LINKID"],
     "DUDETAIL": ["DUID"],
-    "MARKET_PRICE_THRESHOLDS": [],
+    "MARKET_PRICE_THRESHOLDS": []
+
+    # New tables:
+    ,"MARKETNOTICEDATA": ["NOTICEID"]
 }
 
 primary_date_columns = {
@@ -825,7 +866,11 @@ primary_date_columns = {
     "LOSSFACTORMODEL": "EFFECTIVEDATE",
     "FCAS_4s_SCADA_MAP": None,
     "MARKET_PRICE_THRESHOLDS": "EFFECTIVEDATE",
-    "DAILY_REGION_SUMMARY": "SETTLEMENTDATE",
+    "DAILY_REGION_SUMMARY": "SETTLEMENTDATE"
+    
+    # New tables:
+    ,"MARKETNOTICEDATA": "EFFECTIVEDATE"
+
 }
 
 reg_exemption_list_tabs = {
