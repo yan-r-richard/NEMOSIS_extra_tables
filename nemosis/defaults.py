@@ -1,3 +1,6 @@
+# RY comment -- to add a new table, make sure to add information to:
+# names, table_types, display_as_AMEO, data_url, filterable_cols???, table_columns, table_primary_keys, effective_date_group_col???, primary_date_columns
+
 names = {
     "FCAS Providers": "NEM Registration and Exemption List.xls",
     "DISPATCHLOAD": "PUBLIC_DVD_DISPATCHLOAD",
