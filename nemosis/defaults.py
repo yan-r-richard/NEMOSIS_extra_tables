@@ -40,7 +40,6 @@ names = {
     "TRADINGINTERCONNECT": "PUBLIC_DVD_TRADINGINTERCONNECT",
     "MARKET_PRICE_THRESHOLDS": "PUBLIC_DVD_MARKET_PRICE_THRESHOLDS",
     "DAILY_REGION_SUMMARY": "PUBLIC_DAILY_REGION_SUMMARY",
-    # New tables:
     "MARKETNOTICEDATA": "PUBLIC_DVD_MARKETNOTICEDATA"
 }
 
@@ -80,7 +79,6 @@ table_types = {
     "TRADINGINTERCONNECT": "MMS",
     "MARKET_PRICE_THRESHOLDS": "MMS",
     "DAILY_REGION_SUMMARY": "DAILY_REGION_SUMMARY",
-    # New tables:
     "MARKETNOTICEDATA": "MMS"
 }
 
@@ -118,7 +116,6 @@ display_as_AMEO = [
     "TRADINGPRICE",
     "TRADINGREGIONSUM",
     "TRADINGINTERCONNECT",
-    # New tables:
     "MARKETNOTICEDATA"
 ]
 
@@ -182,7 +179,6 @@ data_url = {
     "TRADINGREGIONSUM": "aemo_data_url",
     "TRADINGINTERCONNECT": "aemo_data_url",
     "MARKET_PRICE_THRESHOLDS": "aemo_data_url",
-    # New tables:
     "MARKETNOTICEDATA": "aemo_data_url"
 }
 
@@ -684,7 +680,6 @@ table_columns = {
         "DISPATCHABLELOAD",
         "NETINTERCHANGE"
     ],
-    # New tables:
     "MARKETNOTICEDATA": [
         "NOTICEID",
         "EFFECTIVEDATE",
@@ -790,7 +785,6 @@ table_primary_keys = {
         "INTERVENTION",
         "REGIONID",
     ],
-    # New tables:
     "MARKETNOTICEDATA": [
         "NOTICEID",
         "EFFECTIVEDATE"
@@ -813,7 +807,6 @@ effective_date_group_col = {
     "MNSP_DAYOFFER": ["LINKID"],
     "DUDETAIL": ["DUID"],
     "MARKET_PRICE_THRESHOLDS": [],
-    # New tables:
     "MARKETNOTICEDATA": ["NOTICEID"]
 }
 
@@ -853,7 +846,6 @@ primary_date_columns = {
     "FCAS_4s_SCADA_MAP": None,
     "MARKET_PRICE_THRESHOLDS": "EFFECTIVEDATE",
     "DAILY_REGION_SUMMARY": "SETTLEMENTDATE",
-    # New tables:
     "MARKETNOTICEDATA": "EFFECTIVEDATE"
 }
 

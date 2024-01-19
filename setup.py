@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="nemosis_extra_tables",
+    name="nemosis",
     version="3.5.1",
     author="Nicholas Gorman, Abhijith Prakash",
     author_email="n.gorman305@gmail.com",
