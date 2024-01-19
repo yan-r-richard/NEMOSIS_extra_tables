@@ -3,9 +3,6 @@ import sys
 from . import data_fetch_methods
 from .data_fetch_methods import *
 
-from . import defaults
-from .defaults import *
-
 name = "osdan"
 
 logging.getLogger(__name__).addHandler(logging.NullHandler())
