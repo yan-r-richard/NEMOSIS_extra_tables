@@ -39,10 +39,10 @@ names = {
     "TRADINGREGIONSUM": "PUBLIC_DVD_TRADINGREGIONSUM",
     "TRADINGINTERCONNECT": "PUBLIC_DVD_TRADINGINTERCONNECT",
     "MARKET_PRICE_THRESHOLDS": "PUBLIC_DVD_MARKET_PRICE_THRESHOLDS",
-    "DAILY_REGION_SUMMARY": "PUBLIC_DAILY_REGION_SUMMARY"
+    "DAILY_REGION_SUMMARY": "PUBLIC_DAILY_REGION_SUMMARY",
 
     # New tables:
-    ,"MARKETNOTICEDATA": "PUBLIC_DVD_MARKETNOTICEDATA"
+    "MARKETNOTICEDATA": "PUBLIC_DVD_MARKETNOTICEDATA"
 
 }
 
@@ -81,10 +81,10 @@ table_types = {
     "TRADINGREGIONSUM": "MMS",
     "TRADINGINTERCONNECT": "MMS",
     "MARKET_PRICE_THRESHOLDS": "MMS",
-    "DAILY_REGION_SUMMARY": "DAILY_REGION_SUMMARY"
+    "DAILY_REGION_SUMMARY": "DAILY_REGION_SUMMARY",
 
     # New tables:
-    ,"MARKETNOTICEDATA": "MMS"
+    "MARKETNOTICEDATA": "MMS"
 
 }
 
@@ -124,7 +124,7 @@ display_as_AMEO = [
     "TRADINGINTERCONNECT",
     
     # New tables:
-    ,"MARKETNOTICEDATA"
+    "MARKETNOTICEDATA"
 
 ]
 
@@ -187,10 +187,10 @@ data_url = {
     "TRADINGPRICE": "aemo_data_url",
     "TRADINGREGIONSUM": "aemo_data_url",
     "TRADINGINTERCONNECT": "aemo_data_url",
-    "MARKET_PRICE_THRESHOLDS": "aemo_data_url"
+    "MARKET_PRICE_THRESHOLDS": "aemo_data_url",
 
     # New tables:
-    ,"MARKETNOTICEDATA": "aemo_data_url"
+    "MARKETNOTICEDATA": "aemo_data_url"
 
 }
 
@@ -691,10 +691,10 @@ table_columns = {
         "DISPATCHABLEGENERATION",
         "DISPATCHABLELOAD",
         "NETINTERCHANGE"
-    ]
+    ],
     
     # New tables:
-    ,"MARKETNOTICEDATA": [
+    "MARKETNOTICEDATA": [
         "NOTICEID",
         "EFFECTIVEDATE",
         "TYPEID",
@@ -800,10 +800,10 @@ table_primary_keys = {
         "SETTLEMENTDATE",
         "INTERVENTION",
         "REGIONID",
-    ]
+    ],
 
     # New tables:
-    ,"MARKETNOTICEDATA": [
+    "MARKETNOTICEDATA": [
         "NOTICEID",
         "EFFECTIVEDATE"
     ]
@@ -825,10 +825,10 @@ effective_date_group_col = {
     "MNSP_PEROFFER": ["LINKID"],
     "MNSP_DAYOFFER": ["LINKID"],
     "DUDETAIL": ["DUID"],
-    "MARKET_PRICE_THRESHOLDS": []
+    "MARKET_PRICE_THRESHOLDS": [],
 
     # New tables:
-    ,"MARKETNOTICEDATA": ["NOTICEID"]
+    "MARKETNOTICEDATA": ["NOTICEID"]
 }
 
 primary_date_columns = {
@@ -866,10 +866,10 @@ primary_date_columns = {
     "LOSSFACTORMODEL": "EFFECTIVEDATE",
     "FCAS_4s_SCADA_MAP": None,
     "MARKET_PRICE_THRESHOLDS": "EFFECTIVEDATE",
-    "DAILY_REGION_SUMMARY": "SETTLEMENTDATE"
+    "DAILY_REGION_SUMMARY": "SETTLEMENTDATE",
     
     # New tables:
-    ,"MARKETNOTICEDATA": "EFFECTIVEDATE"
+    "MARKETNOTICEDATA": "EFFECTIVEDATE"
 
 }
 
